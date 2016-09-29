@@ -62,7 +62,7 @@ var translationsEN = {
     REPLYPROF: "Contact ",
     PHONE: "Phone Number",
     PROFSAVAL: "Gig seekers profiles: ",
-    CHATLOG: "Welcome to the Chat Room, "
+    CHATLOG: "Welcome to the Chat, "
 
 
 

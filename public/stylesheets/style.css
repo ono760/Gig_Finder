@@ -250,11 +250,10 @@ html.ng-scope {
 }
 
 .log {
-    color: #089de3;
+    color: black;
     font-size: 100%;
     margin: 5px;
     text-align: center;
-    font-weight: bold;
 }
 
 
