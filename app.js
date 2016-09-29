@@ -17,7 +17,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(favicon(path.join(__dirname, '/public/images/favicomatic/favicon.ico')));
 app.use('/bower_components', express.static(path.join(__dirname, '/bower_components')));
-app.use('/assets',express.static(path.join(__dirname, '../assets')));
 app.use('/public/javascripts/controllers',express.static(path.join(__dirname, 'public/javascripts/controllers')));
 
 app.use(express.static(path.join(__dirname, 'public')));
