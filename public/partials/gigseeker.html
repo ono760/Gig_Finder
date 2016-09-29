@@ -82,8 +82,8 @@
             <br>
             <p class="clear"><strong>{{'GIGLANG' | translate}}</strong>{{ gig.gig_lang_accepted}}</p>
             <p>
-                <span class="glyphicon glyphicon-envelope"></span><strong>{{'REPLYTO' | translate}}</strong>{{ gig.gig_reply_email}}
-                <span class="glyphicon glyphicon-calendar"></span> <strong>{{'POSTEDON' | translate}}</strong>{{ gig.created_at | date : format : timezone}}
+                <span class="glyphicon glyphicon-envelope"></span><strong>{{'REPLYPROF' | translate}}</strong>     {{ gig.gig_reply_email}}
+                <span class="glyphicon glyphicon-calendar"></span> <strong>{{'POSTEDON' | translate}}</strong>   {{gig.created_at}}
             </p>
         </div>
     </div>

@@ -70,16 +70,15 @@
         </div>
         <div class="col-xs-9">
             <h4>
-<!--           {{ seeker.first_name}}
-          {{seeker.last_name}} -->
         </h4>
             <p class="pull-right"><strong>{{'POSTEDBY'|translate}}</strong>{{ seeker.first_name + " " + seeker.last_name}}</p>
             <p class="clear"><strong>{{'SUM'|translate}}</strong>{{ seeker.summary_skills }}</p>
             <br>
             <p class="clear"><strong>{{"GIGLANG"|translate}}</strong>{{ seeker.languages }}</p>
             <p>
-                <span class="glyphicon glyphicon-envelope"></span> <strong>{{'REPLYPROF' | translate}}</strong>: {{seeker.email}} |
-                <span class="glyphicon glyphicon-earphone"></span> {{seeker.phone_number}}
+                <span class="glyphicon glyphicon-envelope"></span> <strong>{{'REPLYPROF'|translate}}</strong>: {{ seeker.email}} | 
+                <span class="glyphicon glyphicon-earphone"></span>
+                {{ seeker.phone_number}}
             </p>
         </div>
     </div>
