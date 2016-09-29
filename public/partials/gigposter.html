@@ -1,0 +1,89 @@
+<div>
+    <h1> {{'WELCOMEPOSTER' | translate}}</h1>
+</div>
+<div class="list-group col-sm-2">
+    <button class="list-group-item" ng-click="show('gig')"><i class="fa fa-pencil-square-o fa-fw" aria-hidden="true"></i>&nbsp; {{'POSTGIG'|translate}}</button>
+    <button class="list-group-item" ng-click="show('list')"><i class="fa fa-search fa-fw" aria-hidden="true"></i>&nbsp; {{'BROWSEPROF'|translate}}</button>
+    <button class="list-group-item" ui-sref="/chatroom" ui-sref-active="active"><i class="fa fa-comments-o fa-fw" aria-hidden="true"></i>&nbsp; {{'CHAT'|translate}}</button>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div ng-show="poster.showForm" class="container">
+    <div id="FORMID">
+        <form id="postForm" name="postForm" ng-submit="postGig(newPost)" class="newForm" ng-show="poster.showForm">
+            <div class="form-group" ng-class="{'has-error': checkForError(postForm.first_name), 'has-success': postForm.first_name.$valid }">
+                <label for="first_name" ng-class="{'text-danger': checkForError(postForm.first_name), 'text-success': postForm.first_name.$valid }">{{'FIRST'|translate}}</label>
+                <input type="text" class="form-control" name="first_name" placeholder="Your first name" ng-model="newPost.first_name" required>
+                <p ng-show="checkForError(postForm.first_name)" class="help-block">Enter your first name: </p>
+            </div>
+            <div class="form-group" ng-class="{'has-error': checkForError(postForm.last_name), 'has-success': postForm.last_name.$valid }">
+                <label for="last_name" ng-class="{'text-danger': checkForError(postForm.last_name), 'text-success': postForm.last_name.$valid }">{{'LAST'|translate}}</label>
+                <input type="text" class="form-control" name="last_name" placeholder="Your Last name" ng-model="newPost.last_name" required>
+                <p ng-show="checkForError(postForm.last_name)" class="help-block">Enter your last name: </p>
+            </div>
+            <div class="form-group" ng-class="{'has-error': checkForError(postForm.gig_location), 'has-success': postForm.gig_location.$valid }">
+                <label for="gig_location" ng-class="{'text-danger': checkForError(postForm.gig_location), 'text-success': postForm.gig_location.$valid }">{{'GIGLOC'|translate}}</label>
+                <input type="text" class="form-control" name="gig_location" placeholder="Gig Location" ng-model="newPost.gig_location" required>
+                <p ng-show="checkForError(postForm.gig_location)" class="help-block">Enter gig location: </p>
+            </div>
+            <div class="form-group" ng-class="{'has-error': checkForError(postForm.gig_amount), 'has-success': postForm.gig_amount.$valid }">
+                <label for="gig_amount" ng-class="{'text-danger': checkForError(postForm.gig_location), 'text-success': postForm.gig_location.$valid }">{{'GIGAMT'|translate}}</label>
+                <input type="text" class="form-control" name="gig_amount" placeholder="Gig Amount" ng-model="newPost.gig_amount" required>
+                <p ng-show="checkForError(postForm.gig_amount)" class="help-block">Enter gig amount $ : </p>
+            </div>
+            <div class="form-group" ng-class="{'has-error': checkForError(postForm.gig_reply_email), 'has-success': postForm.gig_reply_email.$valid }">
+                <label for="gig_reply_email" ng-class="{'text-danger': checkForError(postForm.gig_reply_email), 'text-success': postForm.gig_reply_email.$valid }">{{'REPLYTO'|translate}}</label>
+                <input type="text" class="form-control" name="gig_reply_email" placeholder="Gig reply email" ng-model="newPost.gig_reply_email" required>
+                <p ng-show="checkForError(postForm.gig_reply_email)" class="help-block">Enter reply email: </p>
+            </div>
+            <label>{{'GIGDESC'|translate}}</label>
+            <textarea class="form-control" rows="10" name="gig_description" placeholder="Gig Description" ng-model="newPost.gig_description" required></textarea>
+            <div class="form-group" ng-class="{'has-error': checkForError(postForm.gig_lang_accepted), 'has-success': postForm.gig_lang_accepted.$valid }">
+                <label for="gig_lang_accepted" ng-class="{'text-danger': checkForError(postForm.gig_lang_accepted), 'text-success': postForm.gig_lang_accepted.$valid }">{{'GIGLANG'|translate}}</label>
+                <input type="text" class="form-control" name="gig_lang_accepted" placeholder="Languages Accepted" ng-model="newPost.gig_lang_accepted" required>
+                <p ng-show="checkForError(postForm.gig_lang_accepted)" class="help-block">Enter languages spoken: </p>
+            </div>
+            <input type='submit' class="btn btn-default" value={{'POSTGIG'|translate}}>
+        </form>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h3 ng-show="poster.showList">{{'PROFSAVAL'|translate}}</h3>
+<br>
+<div ng-show="poster.showList" id="seekerProf" class="well" ng-repeat="seeker in poster.results.data | orderBy: view.orderVal | filter:view.searchPosts">
+    <div class="row">
+        <div class="col-xs-3">
+            <p><strong>{{'LOC'|translate}}</strong> {{ seeker.location }}</p>
+        </div>
+        <div class="col-xs-9">
+            <h4>
+<!--           {{ seeker.first_name}}
+          {{seeker.last_name}} -->
+        </h4>
+            <p class="pull-right"><strong>{{'POSTEDBY'|translate}}</strong>{{ seeker.first_name + " " + seeker.last_name}}</p>
+            <p class="clear"><strong>{{'SUM'|translate}}</strong>{{ seeker.summary_skills }}</p>
+            <br>
+            <p class="clear"><strong>{{"GIGLANG"|translate}}</strong>{{ seeker.languages }}</p>
+            <p>
+                <span class="glyphicon glyphicon-envelope"></span> <strong>{{'REPLYPROF' | translate}}</strong>: {{seeker.email}} |
+                <span class="glyphicon glyphicon-earphone"></span> {{seeker.phone_number}}
+            </p>
+        </div>
+    </div>
+</div>
+<div ng-show="poster.showChat">
+    <h1>Chat window</h1>
+</div>

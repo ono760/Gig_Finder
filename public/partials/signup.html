@@ -1,0 +1,30 @@
+<h1>{{'SIGNUPMESS' | translate}}</h1>
+<h4>{{'HAVE' | translate}}<a id="sign" ui-sref="signin" ui-sref-="active">{{'HERE'|translate}}</a></h4>
+<div class="container-fluid">
+    <form id="signUpForm" name="signUpForm" ng-submit="signUp(newUser)" novalidate>
+        <div class="form-group" ng-class="{ 'has-error' : signUpForm.username.$invalid && !signUpForm.username.$pristine ,'has-success' : signUpForm.username.$valid }">
+            <label class="control-label" for="username">{{'USERNAME'|translate}}</label>
+            <input autofocus type="text" name="username" class="form-control" ng-model="newUser.username" ng-required="true" id="username" ng-minlength="4" ng-maxlength="15">
+            <p ng-show="signUpForm.username.$error.minlength" class="help-block">User name should be longer than 4 characters!</p>
+            <p ng-show="signUpForm.username.$error.maxlength" class="help-block">User name should be no longer than 15 characters!</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : signUpForm.password.$invalid && !signUpForm.password.$pristine ,'has-success' : signUpForm.password.$valid }">
+            <label class="control-label" for="password">{{'PASSWORD'|translate}}</label>
+            <input type="password" name="password" class="form-control" ng-model="newUser.password" id="password" ng-minlength="4" ng-maxlength="10" ng-required="true">
+            <p ng-show="signUpForm.password.$error.minlength" class="help-block">Password is too short!</p>
+            <p ng-show="signUpForm.password.$error.maxlength" class="help-block">Password is too long!</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : signUpForm.email.$invalid && !signUpForm.email.$pristine ,'has-success' : signUpForm.email.$valid }">
+            <label class="control-label" for="email">{{'EMAIL'|translate}}</label>
+            <input type="email" id="email" name="email" class="form-control" ng-required="true" ng-model="newUser.email">
+            <p ng-show="signUpForm.email.$invalid && !signUpForm.email.$pristine" class="help-block">Please enter a valid email!</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : signUpForm.zip.$invalid && !signUpForm.zip.$pristine ,'has-success' : signUpForm.zip.$valid }">
+            <label class="control-label" for="zip">{{'ZIPCODE'|translate}}</label>
+            <input type="number" id="zip" name="zip" class="form-control" ng-pattern="/^[0-9]{5}$/" ng-required="true" ng-model="newUser.zip">
+            <p ng-show="signUpForm.zip.$invalid && !signUpForm.zip.$pristine" class="help-block">Enter a valid zip.</p>
+        </div>
+        <button type="submit" class="btn btn-primary" ng-disabled="signUpForm.$invalid">{{'SUBMIT'|translate}}</button>
+        <p ng-show="signup.errorMessage" class="alert">User already exists!</p>
+    </form>
+</div>

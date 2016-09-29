@@ -1,0 +1,39 @@
+<div ng-cloak>
+    <h1 ng-cloak>{{'HEADLINE' | translate}}</h1>
+</div>
+<h4> {{home.selectLanguage}}</h4>
+<h4> {{home.selectLanguageEs}}</h4>
+<div id="homeButtons" data-role="main" class="ui-content" ng-controller="TranslateControl">
+    <span class="button-wrap"><a href="/#about" class="button button-circle button-primary" ng-click="changeLanguage('en')" translate>English</a></span>
+    <span class="button-wrap"><a href="/#about" class="button button-circle button-primary" ng-click="changeLanguage('es')" translate>Español</a></span>
+</div>
+<br>
+<br>
+<br>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <p>HQ</p>
+                <p>Tehama St.,
+                    <br>San Francisco, CA</p>
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-phone fa-fw"></i> (619) 940-8675</li>
+                    <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:ono.ucsb@gmail.com">ono.ucsb@gmail.com</a>
+                    </li>
+                </ul>
+                <br>
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://github.com/ono760"><i class="fa fa-github fa-fw fa-4x"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/ono760"><i class="fa fa-linkedin fa-fw fa-4x"></i></a>
+                    </li>
+                </ul>
+                <hr class="small">
+                <p class="text-muted">{{'COPYRIGHT' | translate}}</p>
+            </div>
+        </div>
+    </div>
+</footer>
