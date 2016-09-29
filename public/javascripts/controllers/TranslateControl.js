@@ -14,7 +14,7 @@ var translationsEN = {
     ABOUTTWO: "Trust",
     ABOUTTHREE: "Open Communication",
     TONE: "We believe that open communication and honesty is key to success.",
-    TTWO: "We believe that you can count on your fellow people to help you accomplish a task.",
+    TTWO: "We believe that you can count on someone to help you accomplish a task.",
     TTHREE: "Communication is key...Talk to each other and accomplish something great.",
     GETSTARTED: "Get Started",
     WHO: "Are you?",
@@ -24,12 +24,13 @@ var translationsEN = {
     WELCOMESEEKER: "Welcome, Gig Seeker",
     POSTGIG: "Post a gig!",
     BROWSEPROF: "Browse Profiles",
-    CHAT: "Enter the chatroom!",
+    CHAT: "Chat now!",
     POSTPROF: "Post Your Profile!",
     BROWSEGIGS: "Search for Gigs!",
     SEEKERLUCK: "Good luck finding a gig!",
-    CHATWELCOME: "Gig Finder Chatroom!",
+    CHATWELCOME: "Join the conversation!",
     CHATTYPINGHERE: "Type here...",
+    SCROLL: "Scroll down to start",
     PICKNICK: "Pick a nickname to join the chat!",
     GIGSAVAL: "Available Gigs: ",
     GIGLOC: "Gig Location: ",
@@ -60,19 +61,19 @@ var translationsEN = {
     POSTEDON: "Posted on: ",
     REPLYPROF: "Contact ",
     PHONE: "Phone Number",
-    PROFSAVAL: "Checkout these profiles: ",
-    CHATLOG: "Welcome to Gig Finder's Chat Room, "
+    PROFSAVAL: "Gig seekers profiles: ",
+    CHATLOG: "Welcome to the Chat Room, "
 
 
 
 }
 
 var translationsES = {
-    HEADLINE: 'Bienvenidos a la pagina inicial',
+    HEADLINE: 'Bienvenidos A La Página Inicial',
     COPYRIGHT: 'Derechos Reservados © GigFinder 2016',
     ABOUTHEAD: 'Acerca de Gig Finder',
     ABOUTSUBHEAD: 'Nuestros Valores Fundamentales',
-    ABOUTMESSAGE: "Gig Finder fue establecido en Septiembre del 2016 por Ono en Galvanize. El Proposito de Gig Finder es proveer al publico...",
+    ABOUTMESSAGE: "Gig Finder fue establecido en Septiembre del 2016 por Ono en Galvanize. El Proposito de Gig Finder es proveer al publico con opciones de trabajo.",
     ABOUTONE: "Honestidad",
     ABOUTTWO: "Dependencia",
     ABOUTTHREE: "Comunicación abierta",
@@ -91,7 +92,7 @@ var translationsES = {
     POSTPROF: "Publica tu perfil!",
     BROWSEGIGS: "Busca trabajos!",
     SEEKERLUCK: "Suerte encontrando un trabajo!",
-    CHATWELCOME: "Sala de chat de Gig Finder!",
+    CHATWELCOME: "Unete a la conversación!",
     CHATTYPINGHERE: "Escriba aqui...",
     PICKNICK: "Elige un nombre de usuario para ingresar!",
     GIGSAVAL: "Trabajos disponibles: ",
@@ -123,6 +124,7 @@ var translationsES = {
     POSTEDON: "Publicado el: ",
     REPLYPROF: "Contacto ",
     PHONE: "Número de teléfono",
-    PROFSAVAL: "Mira estos perfiles: ",
-    CHATLOG: "Bienvenido al chat, "
+    PROFSAVAL: "Algunos perfiles: ",
+    CHATLOG: "Bienvenido al chat, ",
+    SCROLL: "Desplazar hacia abajo para comenzar"
 };
