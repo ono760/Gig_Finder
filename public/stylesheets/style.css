@@ -1,5 +1,5 @@
 html.ng-scope {
-    background-color: #B0C4DE;
+    background-color: white;
     overflow-x: hidden;
 }
 
@@ -9,27 +9,22 @@ body.ng-scope {
 }
 
 #sign.ng-binding {
-    font-family: gt_walsheim_ultralight;
+    font-family: 'Roboto', sans-serif;
     font-size: 35px;
 }
 
 #needact.ng-binding {
-    font-family: gt_walsheim_ultralight;
+    font-family: 'Roboto', sans-serif;
     font-size: 35px;
 }
 
 .ng-binding {
-    font-family: gt_walsheim_ultralight;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
-    font-family: gt_walsheim_ultralight;
+    font-family: 'Roboto', sans-serif;
 }
-
-
-/*.row{
-    padding-top: 40px;
-}*/
 
 [ng\:cloak],
 [ng-cloak],
@@ -61,12 +56,12 @@ td.ng-binding {
 }
 
 #main_body {
-    background-color: #B0C4DE;
+    background-color: white;
     overflow-x: hidden;
 }
 
 .ng-scope {
-    background-color: #B0C4DE;
+    background-color: white;
 }
 
 .container-fluid {
@@ -74,7 +69,7 @@ td.ng-binding {
 }
 
 .container {
-    background-color: aliceblue;
+    background-color: white;
 }
 
 .button-wrap {
@@ -146,27 +141,6 @@ footer {
     display: block;
 }
 
-
-/*.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-    text-decoration: none;
-}
-
-.sidebar-nav > .sidebar-brand {
-    height: 65px;
-    font-size: 18px;
-    line-height: 60px;
-}
-
-.sidebar-nav > .sidebar-brand a {
-    color: #999999;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
-    background: none;
-}*/
-
 a.navbar-brand {
     font-size: 30px;
 }
@@ -174,16 +148,6 @@ a.navbar-brand {
 label.control-label.ng-binding {
     font-size: 20px;
 }
-
-
-/*#nav-bar {
-    font-size:90px;
-}*/
-
-
-/*ng-binding active {
-    font-size:30px;
-}*/
 
 
 /* Fix user-agent */
@@ -196,14 +160,8 @@ html.ng-scope {
 }
 
 .ng-scope {
-    background-color: aliceblue;
+    background-color: white;
 }
-
-
-/*html,
-input {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-}*/
 
 
 /* Pages */
@@ -276,8 +234,6 @@ input {
     display: none;
     background-color: white;
     position: relative;
-    /*    height: 500px;
-    width: 500px;*/
 }
 
 
@@ -310,7 +266,7 @@ input {
     padding-top: 10px;
     width: auto;
     font-size: 18px;
-    background-color: aliceblue;
+    background-color: white;
 }
 
 .messages {
