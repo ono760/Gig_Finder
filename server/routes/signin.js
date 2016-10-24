@@ -9,14 +9,12 @@ const USERS = function() {
     return knex('users');
 };
 
-
 router.use(function(req, res, next) {
     res.locals.err = null;
     next();
 });
 
 router.post('/post', function(req, res) {
-
     knex('users').where({ username: req.body.username }).first().then(function(user) {
         if (user && bcrypt.compareSync(req.body.password, user.password)) {
             var user = {
@@ -28,8 +26,8 @@ router.post('/post', function(req, res) {
         } else {
             res.redirect('/signup');
 
-        }
-    })
+        };
+    });
 });
 
 

@@ -11,7 +11,6 @@ var signup = require('./signup');
 var signin = require('./signin');
 var logout = require('./logout');
 var user = require('./user');
-var chatroom = require('./chatroom');
 
 router.use('/gig_posters', gig_posters);
 router.use('/gig_seekers', gig_seekers);
@@ -20,6 +19,5 @@ router.use('/logout', logout);
 router.use('/signup', signup);
 router.use('/signin', signin);
 router.use('/user', user);
-router.use('/chatroom', chatroom);
 
 module.exports = router;

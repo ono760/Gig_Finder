@@ -1,5 +1,3 @@
-// Update with your config settings.
-
 module.exports = {
 
     development: {
@@ -7,13 +5,10 @@ module.exports = {
         connection: 'postgres://localhost:5432/gig_finder_db',
         debug: true
     },
-
     staging: {
         client: 'pg',
         connection: process.env.DATABASE_URL
     },
-
-
     production: {
         client: 'pg',
         connection: process.env.DATABASE_URL,
@@ -22,5 +17,4 @@ module.exports = {
             max: 15
         }
     }
-
 };

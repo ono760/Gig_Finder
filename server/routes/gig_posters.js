@@ -15,9 +15,7 @@ router.get('/', function(req, res, next) {
     })
 });
 
-
 router.post('/post', function(req, res) {
-
     knex('gigs').insert({
         first_name: req.body.first_name,
         last_name: req.body.last_name,
@@ -31,35 +29,5 @@ router.post('/post', function(req, res) {
         res.redirect('/#gigposters');
     });
 });
-
-
-
-//posters can signup for an acount
-// router.post('/signup', function(req, res, next) {
-//     console.log(req.body);
-//     res.json({ message: "signup here" })
-// });
-
-// //posters can login
-// router.post('/login', function(req, res, next) {
-//     res.json({ message: "login here" })
-// });
-// //posters can logout
-// router.post('/logout', function(req, res, next) {
-//     res.json({ message: "logout here" })
-// });
-
-// //posters can update an existing gig post
-// router.put('/edit', function(req, res, next) {
-//     console.log("update here");
-//     res.json({ update: 'y' })
-// });
-
-// //posters can delete an existing gig post
-// router.delete('/delete', function(req, res, next) {
-//     console.log("delete here");
-
-// })
-
 
 module.exports = router;

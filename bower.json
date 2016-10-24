@@ -6,7 +6,7 @@
         "Onofre Echeverria <ono.ucsb@gmail.com>"
     ],
     "license": "MIT",
-    "homepage": "https://github.com/ono760/Capstone_Project",
+    "homepage": "https://github.com/ono760/Gig_Finder",
     "ignore": [
         "**/.*",
         "node_modules",
