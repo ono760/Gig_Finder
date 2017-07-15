@@ -1,4 +1,4 @@
-app.controller("ChatRoomControl", function($scope, $rootScope, $http, socket) {
+app.controller("ChatRoomControl", ['$scope', '$rootScope', '$http', 'socket', function($scope, $rootScope, $http, socket) {
     $scope.chat = {};
 
     $(function() {
@@ -214,4 +214,4 @@ app.controller("ChatRoomControl", function($scope, $rootScope, $http, socket) {
             removeChatTyping(data);
         });
     });
-});
+}]);

@@ -1,4 +1,4 @@
-app.controller("SignInControl", function($scope, $http, $location) {
+app.controller("SignInControl", ['$scope', '$http', '$location', function($scope, $http, $location) {
     $scope.signin = {};
     $scope.master = {};
     $scope.signin.signInMessage = "Login with your account";
@@ -15,4 +15,4 @@ app.controller("SignInControl", function($scope, $http, $location) {
         })
 
     };
-});
+}]);

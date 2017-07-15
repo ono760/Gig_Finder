@@ -1,3 +1,3 @@
-app.controller("AboutControl", function($scope) {
+app.controller("AboutControl", ['$scope', function($scope) {
     $scope.about = {};
-});
+}]);

@@ -6,8 +6,6 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Gig Finder</title>
     <base href="/">
-    <link rel="stylesheet" href="../stylesheets/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body ng-cloak id="main_body">
@@ -45,10 +43,15 @@
     <div class="container">
         <div class='content' ui-view></div>
     </div>
-    <br>
+    <!-- load jquery -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="../build/css/stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <!-- load angularjs -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
@@ -56,34 +59,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.12.1/angular-translate.min.js"></script>
-    <script type="text/javascript" src="javascripts/app.js"></script>
-    <script type="text/javascript" src="../stylesheets/buttons/js/buttons.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-    <link rel="stylesheet" href="../stylesheets/buttons/css/buttons.css">
-    <script type="text/javascript" src="javascripts/controllers/HomeControl.js"></script>
-    <script type="text/javascript" src="javascripts/controllers/AboutControl.js"></script>
-    <script type="text/javascript" src="javascripts/controllers/SignUpControl.js"></script>
-    <script type="text/javascript" src="javascripts/controllers/SignInControl.js"></script>
-    <script type="text/javascript" src="javascripts/controllers/GigPosterControl.js"></script>
-    <script type="text/javascript" src="javascripts/controllers/GigSeekerControl.js"></script>
-    <script type="text/javascript" src="javascripts/controllers/UserControl.js"></script>
-     <script type="text/javascript" src="javascripts/controllers/ChatRoomControl.js"></script>
-    <script type="text/javascript" src="javascripts/controllers/TranslateControl.js"></script>
+    <!-- load main js -->
+    <script type="text/javascript" src="../build/js/bundle.js"></script>
+    <!-- load socket.io -->
     <script type="text/javascript" src="javascripts/services/socketService.js"></script>
     <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
-    <script src="../bower_components/angular-socket-io/socket.js"></script>
-    <!--  for translations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-socket-io/0.7.0/socket.min.js"></script>
+    <!-- load angularjs dependencies for translation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-cookies.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-sanitize.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.10.0/angular-translate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-storage-cookie/2.10.0/angular-translate-storage-cookie.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-storage-local/2.10.0/angular-translate-storage-local.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-handler-log/2.10.0/angular-translate-handler-log.js"></script>
 </body>
 
 </html>

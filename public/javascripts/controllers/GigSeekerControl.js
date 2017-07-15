@@ -1,4 +1,4 @@
-app.controller("GigSeekerControl", function($scope, $http) {
+app.controller("GigSeekerControl", ['$scope', '$http', function($scope, $http) {
     $scope.seeker = {};
     $scope.seeker.greeting = "Hey there, gig seeker!";
     $scope.seeker.message = "Good luck finding a gig!";
@@ -44,4 +44,4 @@ app.controller("GigSeekerControl", function($scope, $http) {
     $scope.checkForError = function(option) {
         return option.$invalid && option.$touched;
     };
-});
+}]);

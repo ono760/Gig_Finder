@@ -1,4 +1,4 @@
-app.controller("SignUpControl", function($scope, $http, $location, $state) {
+app.controller("SignUpControl", ['$scope', '$http', '$location', '$state', function($scope, $http, $location, $state) {
     $scope.signup = {};
     $scope.signup.signUpMessage = "Signup for a free account";
     $scope.master = {};
@@ -19,4 +19,4 @@ app.controller("SignUpControl", function($scope, $http, $location, $state) {
         });
 
     };
-});
+}]);

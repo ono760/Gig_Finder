@@ -1,4 +1,4 @@
-app.controller("PosterControl", function($scope, $timeout, $mdSidenav, $http) {
+app.controller("PosterControl", ['$scope', '$timeout', '$mdSidenav', '$http', function($scope, $timeout, $mdSidenav, $http) {
     $scope.poster = {};
     $scope.poster.greeting = "Welcome, Gig Poster!";
     $scope.poster.showForm = false;
@@ -43,4 +43,4 @@ app.controller("PosterControl", function($scope, $timeout, $mdSidenav, $http) {
     };
 
 
-});
+}]);
