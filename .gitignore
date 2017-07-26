@@ -4,3 +4,4 @@ bower_components
 .eslintrc.js
 package-lock.json
 public/build/
+.htmlhintrc
