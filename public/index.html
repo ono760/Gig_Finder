@@ -1,76 +1,74 @@
 <!DOCTYPE html>
 <html lang="en-us" ng-app="gigApp">
-
 <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Gig Finder</title>
-    <base href="/">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Gig Finder</title>
+  <base href="/">
 </head>
-
 <body ng-cloak id="main_body">
-    <div>
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button class="navbar-toggle" data-target="#nav-bar" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand">GigFinder</a>
-                </div>
-                <div class="collapse navbar-collapse" id="nav-bar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a ui-sref="home" ui-sref-active="active"><i class="fa fa-home"></i>{{'HOME'|translate}}</a></li>
-                        <li><a ui-sref="about" ui-sref-active="active">{{'ABOUT'|translate}}</a></li>
-                        <li><a ui-sref="signup" ui-sref-active="active">{{'MY'|translate}}</a></li>
-                        <li>
-                            <a ui-sref="whoami" ui-sref-active="active"></a>
-                        </li>
-                        <li>
-                            <a ui-sref="gigposter" ui-sref-active="active"></a>
-                        </li>
-                        <li>
-                            <a ui-sref="gigseeker" ui-sref-active="active"></a>
-                        </li>
-                        <li>
-                            <a ui-sref="chatroom" ui-sref-active="active"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="container">
-        <div class='content' ui-view></div>
-    </div>
-    <!-- load jquery -->
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <!-- load stylesheets -->
-    <link rel="stylesheet" href="../build/css/stylesheet.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-    <!-- load angularjs -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.js"></script>
-    <!-- load main js -->
-    <script type="text/javascript" src="../build/js/bundle.js"></script>
-    <!-- load socket.io -->
-    <script type="text/javascript" src="javascripts/services/socketService.js"></script>
-    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-socket-io/0.7.0/socket.min.js"></script>
-    <!-- load angularjs dependencies for translation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-cookies.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-sanitize.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.10.0/angular-translate.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-storage-cookie/2.10.0/angular-translate-storage-cookie.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-storage-local/2.10.0/angular-translate-storage-local.js"></script>
+  <div>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button class="navbar-toggle" data-target="#nav-bar" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand">GigFinder</a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-bar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a ui-sref="home" ui-sref-active="active"><i class="fa fa-home"></i>{{'HOME'|translate}}</a></li>
+            <li><a ui-sref="about" ui-sref-active="active">{{'ABOUT'|translate}}</a></li>
+            <li><a ui-sref="signup" ui-sref-active="active">{{'MY'|translate}}</a></li>
+            <li>
+              <a ui-sref="whoami" ui-sref-active="active"></a>
+            </li>
+            <li>
+              <a ui-sref="gigposter" ui-sref-active="active"></a>
+            </li>
+            <li>
+              <a ui-sref="gigseeker" ui-sref-active="active"></a>
+            </li>
+            <li>
+              <a ui-sref="chatroom" ui-sref-active="active"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <div class='content' ui-view></div>
+  </div>
+  <!-- load jquery -->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <!-- load stylesheets -->
+  <link rel="stylesheet" href="../build/css/stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Buttons/1.1.1/css/buttons.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <!-- load angularjs -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.js"></script>
+  <!-- load main js -->
+  <script type="text/javascript" src="../build/js/bundle.js"></script>
+  <!-- load socket.io -->
+  <script type="text/javascript" src="javascripts/services/socketService.js"></script>
+  <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-socket-io/0.7.0/socket.min.js"></script>
+  <!-- load angularjs dependencies for translation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-cookies.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-sanitize.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.10.0/angular-translate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-storage-cookie/2.10.0/angular-translate-storage-cookie.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-storage-local/2.10.0/angular-translate-storage-local.js"></script>
 </body>
-
 </html>

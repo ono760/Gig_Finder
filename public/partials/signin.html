@@ -1,17 +1,17 @@
 <h1>{{'LOGIN'|translate}}</h1> {{signin.errors}}
 <div class="container-fluid">
-    <form id="signInForm" name="signInForm" ng-submit="signIn(user)" novalidate>
-        <div class="form-group" ng-class="{ 'has-error' : signInForm.username.$invalid && !signInForm.username.$pristine ,'has-success' : signInForm.username.$valid }">
-            <label class="control-label" for="username">{{'USERNAME'|translate}}</label>
-            <input autofocus type="text" name="username" class="form-control" ng-model="user.username" ng-required="true" id="username">
-        </div>
-        <div class="form-group" ng-class="{ 'has-error' : signInForm.password.$invalid && !signInForm.password.$pristine ,'has-success' : signInForm.password.$valid }">
-            <label class="control-label" for="password">{{'PASSWORD'|translate}}</label>
-            <input type="password" name="password" class="form-control" ng-model="user.password" id="password" ng-required="true">
-        </div>
-        <button type="submit" class="btn btn-primary" ng-disabled="signInForm.$invalid">Log In</button>
-        <p ng-show="signin.errorMessage" class="alert">{{'INCORRECT'|translate}}</p>
-    </form>
+  <form id="signInForm" name="signInForm" ng-submit="signIn(user)" novalidate>
+    <div class="form-group" ng-class="{ 'has-error' : signInForm.username.$invalid && !signInForm.username.$pristine ,'has-success' : signInForm.username.$valid }">
+      <label class="control-label" for="username">{{'USERNAME'|translate}}</label>
+      <input autofocus type="text" name="username" class="form-control" ng-model="user.username" ng-required="true" id="username">
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : signInForm.password.$invalid && !signInForm.password.$pristine ,'has-success' : signInForm.password.$valid }">
+      <label class="control-label" for="password">{{'PASSWORD'|translate}}</label>
+      <input type="password" name="password" class="form-control" ng-model="user.password" id="password" ng-required="true">
+    </div>
+    <button type="submit" class="btn btn-primary" ng-disabled="signInForm.$invalid">Log In</button>
+    <p ng-show="signin.errorMessage" class="alert">{{'INCORRECT'|translate}}</p>
+  </form>
 </div>
 <br>
 <h4>{{'NEED'|translate}}<a id="needact" ui-sref="signup" ui-sref-="active">{{'HERE'|translate}}</a></h4>
